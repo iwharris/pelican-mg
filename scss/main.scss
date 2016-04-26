@@ -1,6 +1,7 @@
-$baseGreen: #39B39D;
-$accentGreen: #28D1B2;
-$feedOrange: #FF6600;
+$headerBackgroundColor: #102029;
+$headerTextColor: white;
+$accentColor: #28D1B2;
+$feedColor: #FF6600;
 $twitterBlue: #00B0ED;
 $facebookBlue: #3B5999;
 $googleRed: #D34836;
@@ -26,7 +27,7 @@ a {
 // uikit override
 
 .uk-navbar-brand {
-    text-transform: uppercase;
+    # text-transform: uppercase;
 }
 
 .uk-article-meta {
@@ -64,11 +65,11 @@ a {
 }
 
 .uk-nav-side > li.uk-active > a {
-    background: $accentGreen;
+    background: $accentColor;
 }
 
 .uk-pagination>.uk-active>span {
-    background: $accentGreen;
+    background: $accentColor;
 }
 
 .uk-icon-medium {
@@ -116,8 +117,8 @@ a {
 
 .mg-header {
     padding: 1em 0;
-    // Green style
-    background-color: $baseGreen;
+    // Header color
+    background-color: $headerBackgroundColor;
 }
 
 .mg-brand {
@@ -128,8 +129,8 @@ a {
     }
     padding-left: 0;
 
-    // Green style
-    color: white;
+    // Header style
+    color: $headerTextColor;
     text-decoration: none;
 
     &:hover, &:focus {
@@ -167,10 +168,10 @@ a {
 }
 
 .mg-feed {
-    color: $feedOrange;
+    color: $feedColor;
     &:hover {
         text-decoration: none;
-        color: $feedOrange;
+        color: $feedColor;
     }
 }
 
@@ -208,7 +209,7 @@ a {
     }
 
     .uk-icon-rss {
-        background-color: $feedOrange;
+        background-color: $feedColor;
     }
 
     .uk-icon-twitter {
